@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Pages with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive JavaScript Demo 🚀</h1>
+        <button id="themeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        
+        <section class="interactive-section">
+            <h2>FAQ: Collapsible Content (Events & DOM)</h2>
+            
+            <div class="accordion">
+                <button class="accordion-header" data-id="1">What is JavaScript?</button>
+                <div class="accordion-content" id="content-1">
+                    <p>JavaScript is a programming language that enables you to create dynamically updating content, control multimedia, animate images, and much more. It's the third layer of the standard web technologies, sitting atop HTML (structure) and CSS (styling).</p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-header" data-id="2">What is the DOM?</button>
+                <div class="accordion-content" id="content-2">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. When JavaScript manipulates the page, it's interacting with the DOM.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="interactive-section">
+            <h2>Part 3: Custom Form Validation</h2>
+            <form id="contactForm">
+                <p id="formStatus" class="message-box"></p>
+                
+                <div class="form-group">
+                    <label for="userName">Full Name (Min 3 characters):</label>
+                    <input type="text" id="userName" name="userName" required>
+                    <small class="error-text" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" required>
+                    <small class="error-text" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="userPassword">Password (Min 8 chars, incl. number):</label>
+                    <input type="password" id="userPassword" name="userPassword" required>
+                    <small class="error-text" id="passwordError"></small>
+                </div>
+
+                <button type="submit" id="submitButton">Submit Form</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Code by JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
